@@ -2,6 +2,7 @@ from strands import Agent
 from strands_tools import http_request
 from typing import Dict, Any
 import json
+import os
 
 # Define a weather-focused system prompt
 WEATHER_SYSTEM_PROMPT = """You are a weather assistant with HTTP capabilities. You can:
@@ -41,7 +42,7 @@ def lambda_handler(event: Dict[str, Any], context) -> Dict[str, Any]:
         agent = Agent(
             system_prompt=WEATHER_SYSTEM_PROMPT,
             tools=[http_request],
-            model="us.anthropic.claude-3-5-sonnet-20241022-v2:0"
+            model=os.environ['BEDROCK_MODEL_ID']
         )
         
         response = agent(prompt)

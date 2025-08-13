@@ -79,7 +79,7 @@ resource "aws_lambda_function" "strands_demo" {
     variables = {
       # Use a different name since AWS_REGION is reserved
       BEDROCK_REGION              = var.aws_region
-      BEDROCK_MODEL_ID            = "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
+      BEDROCK_MODEL_ID            = var.model_name
     }
   }
 
