@@ -56,7 +56,7 @@ A Terraform infrastructure project that provisions an AWS API Gateway for a Stra
 
 ### Lambda Function
 - Python-based function handling agent requests
-- Located in `terraform/lambda_code/`
+- Located in `./lambda_code/`
 - Automatically packaged and deployed
 
 ### Supporting Resources
