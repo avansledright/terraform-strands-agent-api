@@ -31,8 +31,8 @@ A Terraform infrastructure project that provisions an AWS API Gateway for a Stra
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd strands-agent-demo
+   git clone https://github.com/avansledright/terraform-strands-agent-api.git
+   cd terraform-strands-agent-api
    ```
 
 2. **Configure variables**
