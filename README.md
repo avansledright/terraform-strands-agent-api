@@ -5,10 +5,9 @@ A Terraform infrastructure project that provisions an AWS API Gateway for a Stra
 ## Project Structure
 
 ```
-├── terraform/
-│   └── lambda_code/
-│       ├── lambda_function.py      # Main Lambda function code
-│       └── requirements.txt        # Python dependencies
+├── lambda_code/
+│   ├── lambda_function.py      # Main Lambda function code
+│   └── requirements.txt        # Python dependencies
 ├── api_gateway.tf                 # API Gateway configuration
 ├── data.tf                        # Data sources
 ├── iam.tf                         # IAM roles and policies
